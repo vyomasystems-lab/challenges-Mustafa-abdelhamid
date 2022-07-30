@@ -47,11 +47,17 @@ async def test_mux(dut):
     dut.inp29.value=random_data[29]
     
     dut.inp30.value=random_data[30]
-    for i in range(32): ## TESTING ALL POSSIPLE SELECTIONS
+
+    assert_var=0
+
+    for i in range(30): ## TESTING ALL POSSIPLE SELECTIONS
         dut.sel.value=i
         await Timer(1, units="ns")
-        print("DUT VALUE :",int(dut.out.value))
-        print("EXPECTED VALUE: ",random_data[i])
-        assert int(dut.out.value) == random_data[i], "incorrect out "
         
+        if(int(dut.out.value) != random_data[i]):
+            print("*********** FAILED AT SEL={D} *************".format(D=i))
+            print("DUT VALUE :      ",int(dut.out.value))
+            print("EXPECTED VALUE:  ",random_data[i])
+            assert_var=1
         await Timer(2, units="ns") 
+    assert assert_var == 0, " BUGGY MUX ....CHECK OUTPUT FOR MORE DETAILS"
