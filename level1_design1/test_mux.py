@@ -55,7 +55,7 @@ async def test_mux(dut):
         await Timer(1, units="ns")
         
         if(int(dut.out.value) != random_data[i]):
-            print("*********** FAILED AT SEL={D} *************".format(D=i))
+            print("*********** FAILED AT SEL={D} **************".format(D=i))
             print("DUT VALUE :      ",int(dut.out.value))
             print("EXPECTED VALUE:  ",random_data[i])
             assert_var=1
