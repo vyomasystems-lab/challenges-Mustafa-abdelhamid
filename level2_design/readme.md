@@ -36,8 +36,6 @@ Output mismatches for the above inputs proving that there is a design bug
 The design has the following bugs 
 * ANDN instruction output doesn't match ANDN model output  
 
-## Design Fix
-Updating the design and re-running the test makes the test pass.
 
 ## Verification Strategy
  The input data is randomised 
