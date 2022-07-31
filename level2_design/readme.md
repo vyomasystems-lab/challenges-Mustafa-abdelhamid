@@ -13,7 +13,8 @@ The values are assigned to the input port using random generated data to sources
         mav_putvalue_src3 = random.randint(0, (2**32)-1)
 ```
 then a for loop to verify all instructions. A python dictionary stores all instructions keys are instruction and value is its corresponding binary representation
-## photo  
+![image](https://user-images.githubusercontent.com/90484856/182022003-80268165-67a7-4b6f-99b5-b37737335c23.png)
+  
 ```
 for x in instructions:
         mav_putvalue_instr = instructions[x]
@@ -22,8 +23,7 @@ for x in instructions:
 The assert statement is used for comparing the  outut to the expected value.
 
 ## The following error is seen:
-![image](https://user-images.githubusercontent.com/90484856/181624483-f56c4219-1f5c-4a1d-a5ae-b871188b035f.png)
-
+![image](https://user-images.githubusercontent.com/90484856/182021965-173e5f94-9753-4436-95b2-b7f365e55fe6.png)
 
 ## Test Scenario **(Important)**
 - Test Inputs: DUT instruction = ANDN ( 0x40007033 ) 
