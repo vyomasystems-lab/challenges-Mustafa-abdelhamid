@@ -1,10 +1,10 @@
-# Level 1 design 1 Design Verification
+# Level 2 design Verification
 
 The verification environment is setup using [Vyoma's UpTickPro](https://vyomasystems.com) provided for the hackathon.
 
 ## Verification Environment
 
-The [CoCoTb](https://www.cocotb.org/) based Python test is developed as explained. The test drives inputs to the Design Under Test (adder module here) which takes in 4-bit inputs *a* and *b* and gives 5-bit output *sum*
+The [CoCoTb](https://www.cocotb.org/) based Python test is developed.
 
 The values are assigned to the input port using random generated data to sources inputs 1, 2, and 3 
  ``` 
