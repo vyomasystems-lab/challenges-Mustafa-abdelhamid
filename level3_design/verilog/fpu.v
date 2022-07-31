@@ -489,7 +489,7 @@ delay1  #0 ud000(clk, underflow_fmul1, mul_uf_del);
 delay1  #0 ud001(clk, underflow_fmul_r[0], uf2_del);
 delay1  #0 ud002(clk, underflow_fmul_r[1], ufb2_del);
 delay1  #0 ud003(clk, underflow_d, underflow_d_del);
-delay1  #0 ud004(clk, test.u0.u4.exp_out1_co, co_del);
+delay1  #0 ud004(clk, u0.u4.exp_out1_co, co_del);
 delay1  #0 ud005(clk, underflow_fmul_r[2], ufc2_del);
 delay1 #30 ud006(clk, out_d, out_d_del);
 

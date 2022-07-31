@@ -79,7 +79,7 @@ event		error_event;
 integer		error, vcount;
 
 always #50 clk = ~clk;
-
+/*
 initial
    begin
 	$display ("\n\nFloating Point Unit Version 1.5\n\n");
@@ -131,7 +131,8 @@ initial
 	$finish;
    end
 
-
+*/
+/*
 task run_test;
 begin
 	@(posedge clk);
@@ -222,7 +223,8 @@ begin
 
    end
 endtask
-
+*/
+/*
 always @(posedge clk)
    begin
    	s1 <= #1 start;
@@ -374,11 +376,11 @@ rmode4, fpu_op4, rmode5, fpu_op5, rmode3, fpu_op3);
 		$finish;
 	   end
    end
-
+*/
 
 fpu u0(clk, fpu_rmode, fpu_op, opa, opb, sum, inf, snan, qnan, ine, overflow, underflow, zero, div_by_zero);
 
-
+/*
 task disp_fp;
 input [31:0]	fp;
 
@@ -404,7 +406,7 @@ reg	[7:0]	exp;
    end
 
 endtask
-
+*/
 endmodule
 
 
