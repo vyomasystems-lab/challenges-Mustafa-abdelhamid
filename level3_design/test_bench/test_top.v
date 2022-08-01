@@ -378,7 +378,22 @@ rmode4, fpu_op4, rmode5, fpu_op5, rmode3, fpu_op3);
    end
 */
 
-fpu u0(clk, fpu_rmode, fpu_op, opa, opb, sum, inf, snan, qnan, ine, overflow, underflow, zero, div_by_zero);
+fpu u0(
+	.clk(clk),
+ 	.rmode(fpu_rmode),
+  	.fpu_op(fpu_op),
+   	.opa(opa),
+	.opb(opb),
+	.out(sum),
+	.inf(inf),
+	.snan(snan),
+	.qnan(qnan), 
+	.ine(ine), 
+	.overflow(overflow), 
+	.underflow(underflow), 
+	.zero(zero), 
+	.div_by_zero(div_by_zero)
+	);
 
 /*
 task disp_fp;

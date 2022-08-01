@@ -34,7 +34,6 @@
 
 
 `timescale 1ns / 100ps
-
 module post_norm( clk, fpu_op, opas, sign, rmode, fract_in, exp_in, exp_ovf,
 		opa_dn, opb_dn, rem_00, div_opa_ldz, output_zero, out,
 		ine, overflow, underflow, f2i_out_sign);
